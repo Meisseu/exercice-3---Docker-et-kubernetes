@@ -18,11 +18,11 @@ mongoose.connect(MONGO_URI, {
     useUnifiedTopology: true
 }).then(() => console.log("MongoDB connecté"))
 .catch(err => console.error("Erreur MongoDB :", err));
-
 app.use('/api/products', productRoutes);
 app.use('/api/customers', customerRoutes);
 app.use('/api/orders', orderRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, "0.0.0.0", () => console.log(`Server running on port ${PORT}`));
+
 
