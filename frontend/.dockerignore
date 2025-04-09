@@ -1,0 +1,22 @@
+nodes_modules# Node modules (inutile de les copier, Docker fait npm install lui-même)
+node_modules
+npm-debug.log
+
+# Mac/Windows système
+.DS_Store
+Thumbs.db
+
+# Vite ou CRA build output
+dist
+build
+
+# Git
+.git
+.gitignore
+
+# Tests ou configs locales
+.vscode
+.env.local
+.env.development
+.env.test
+coverage
